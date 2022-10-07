@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook
 
-MAINTAINER Leah Wasser <leah.wasser@colorado.edu>
+MAINTAINER Leah Wasser <leah@pyopensci.org>
 
 COPY environment.yml environment.yml
 
