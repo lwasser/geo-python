@@ -4,7 +4,8 @@ MAINTAINER Leah Wasser <leah@pyopensci.org>
 
 COPY environment.yml environment.yml
 
-RUN conda env update --name base --file environment.yml \
+RUN conda install -c conda-forge mamba
+RUN mamba env update --name base --file environment.yml \
   && conda info --envs \
   && conda list \
   && rm environment.yml

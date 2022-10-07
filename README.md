@@ -43,9 +43,16 @@ We recommend installing everything using the with `conda-forge` channel.
 The tutorial above will provide you with more detailed setup instructions.
 But here are the cliff notes:
 
-To begin, install the environment using:
+To begin make sure ou have a `conda` python distribution installed. I suggest
+that you use `miniconda` as specified int he tutorial above.
 
-`conda env create -f environment.yml`
+Next, install mamba. Mamba will be the resolver for installing your environment. It is much faster than conda!
+
+`$ conda install -c conda-forge mamba`
+
+Finally, install the environment using:
+
+`mamba env create -f environment.yml`
 
 This will take a bit of time to run. 
 
@@ -58,9 +65,10 @@ This will take a bit of time to run.
 
 You can update your environment at any time using:
 
-`conda env update -f environment.yml`
+`mamba env update -f environment.yml`
 
-To manage your conda environments, use the following commands:
+To manage your conda environments, use the following commands (you can 
+still use conda commands, mamba just makes the install faster):
 
 #### View envs installed
 `conda info --envs`
