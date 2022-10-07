@@ -3,8 +3,8 @@
 name: Push to Docker Hub from Main Branch
 
 on:
-  push:
-    branches: main
+  release:
+    types: [published]
 
 jobs:
   build-push-image:
@@ -26,7 +26,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: earthlab/r-python-eds-lessons-env:latest
+          tags: lwasser/ea-python-envt:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
