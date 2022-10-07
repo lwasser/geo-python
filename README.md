@@ -1,11 +1,11 @@
 # Earth Analytics Python Conda Environment
 
-[![Build Status](https://travis-ci.com/earthlab/earth-analytics-python-env.svg?branch=master)](https://travis-ci.com/earthlab/earth-analytics-python-env)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/38a49nccgpl1metv?svg=true)](https://ci.appveyor.com/project/mbjoseph/earth-analytics-python-env)
+![Build / test environment](https://github.com/lwasser/earth-analytics-python-env/actions/workflows/build-test-envt.yml/badge.svg)
 
 [![DOI](https://zenodo.org/badge/312111259.svg)](https://zenodo.org/badge/latestdoi/312111259)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lwasser/earth-analytics-python-env/main)
-[![](https://images.microbadger.com/badges/image/earthlab/earth-analytics-python-env.svg)](https://microbadger.com/images/earthlab/earth-analytics-python-env "EA-Environment Docker Stats")
+
+[![This is in progress being setup:](https://images.microbadger.com/badges/image/lwasser/earth-analytics-python-env.svg)](https://microbadger.com/images/lwasser/earth-analytics-python-env "EA-Environment Docker Stats")
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/earthlab/earth-analytics-python-env?style=plastic)
 
 Welcome to the Earth Analytics `Python` Environment Repository! Here you will find a conda environment that can be installed on your computer using a `.yaml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
@@ -22,7 +22,7 @@ Welcome to the Earth Analytics `Python` Environment Repository! Here you will fi
 
 ## Getting started with the Conda Environment
 
-### 1. Install the Earth Lab Conda Environment on your Local Computer.
+### 1. Install the earth-analytics-python Conda Environment on your Local Computer.
 
 To begin, install `git` and `conda` for Python 3.x (we suggest 3.6).
 
@@ -85,7 +85,7 @@ defined in the `environment.yml` file.
 
 ## Docker Build
 
-[![Docker Automated build](https://img.shields.io/docker/automated/earthlab/earth-analytics-python-env.svg)](https://hub.docker.com/r/earthlab/earth-analytics-python-env/)
+[![Docker Automated build](https://img.shields.io/docker/automated/lwasser/earth-analytics-python-env.svg)](https://hub.docker.com/r/lwasser/earth-analytics-python-env/)
 
 To run a docker container you need to do the following:
 
@@ -96,8 +96,8 @@ Run the following lines to build the docker image locally:
 
 ```
 cd earth-analytics-python-env
-docker build -t earthlab/earth-analytics-python-env .
-docker run -it -p 8888:8888 earthlab/earth-analytics-python-env
+docker build -t lwasser/earth-analytics-python-env .
+docker run -it -p 8888:8888 lwasser/earth-analytics-python-env
 
 ```
 
@@ -105,9 +105,9 @@ docker run -it -p 8888:8888 earthlab/earth-analytics-python-env
 
 To run your earth-analytics image, use the following code:
 
-`docker run --hostname localhost -it -p 8888:8888 earthlab/earth-analytics-python-env`
+`docker run --hostname localhost -it -p 8888:8888 lwasser/earth-analytics-python-env`
 
-NOTE: `earthlab/earth-analytics-python-env` is the name of this image as built above. To
+NOTE: `lwasser/earth-analytics-python-env` is the name of this image as built above. To
 view all images on your computer, type
 `docker images --all`
 
@@ -118,7 +118,7 @@ into your browser to run jupyter with the earth analytics environment installed!
 
 If you wish to update the earth analytics environment, do the following.
 
-1. make a **PR** with changes to master
+1. Make a **PR** with changes to `main`
 1. An code admin will **merge** the PR into the master branch
-1. Check & wait till [Dockerhub](https://hub.docker.com/r/earthlab/earth-analytics-python-env/tags/) has built the image for the merging of the **PR** you can see builds in progress, [here](https://hub.docker.com/r/earthlab/earth-analytics-python-env/builds/)
+1. Check & wait till [Dockerhub](https://hub.docker.com/r/lwasser/earth-analytics-python-env/tags/) has built the image for the merging of the **PR** you can see builds in progress, [here](https://hub.docker.com/r/lwasser/earth-analytics-python-env/builds/)
 
