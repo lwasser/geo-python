@@ -1,4 +1,4 @@
-name: earth-analytics-python
+name: sci-geo-python
 channels:
   - conda-forge
   - defaults
