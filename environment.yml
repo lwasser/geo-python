@@ -8,9 +8,6 @@ dependencies:
   - pip
   # Core scientific python
   - numpy
-  - pyqt
-  - tqdm
-  - kiwisolver
   
   # Plotting
   - matplotlib
@@ -28,25 +25,13 @@ dependencies:
   - rioxarray
   - folium
   - geojson
-  - scipy
   - netcdf4
   - nc-time-axis
   - regionmask
 
-  # Natural language processing
-  - nltk
-  - textblob
-
-  # Jupyter Environment
-  - papermill
+  # Jupyter
   - autopep8
   - jupyterlab
   - notebook
   - ipython
   - jupyter_contrib_nbextensions
-  - nbclean
-  - nbresuse
-  
-  # Autograding
-  - matplotcheck>=0.1.3
-  - nbgrader
