@@ -1,8 +1,7 @@
-# This workflow  runs tests for earthpy
-# Because we want a conda environment -  and that builds  slower,
-# we divided up  tests from linting and docs  to make  for simpler  install envts
+# This workflow runs tests for the geo-python environment
+# It uses mambaforge which is blazing fast powered by mamba / C++
 
-name: Test EA Python Envt Mac, Linux, Windows
+name: Test Geo-python Envt Mac, Linux, Windows
 
 on:
   pull_request:
@@ -22,16 +21,11 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-      - uses: actions/checkout@v2
-      - uses: conda-incubator/setup-miniconda@v2
+      - name: Install conda envt w micromamba
+        uses: mamba-org/provision-with-micromamba@main
         with:
-          mamba-version: "*"
-          miniconda-version: 'latest'
-          channels: conda-forge
-          channel-priority: true
-          auto-update-conda: false
-          auto-activate-base: false
           environment-file: environment.yml
-          activate-environment: geo-python
+          environment-name: geo-python
+          cache-downloads: true
       - run: conda list
       - run: python -c "import rioxarray"
