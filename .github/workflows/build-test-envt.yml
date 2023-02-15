@@ -21,6 +21,8 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
+      - uses: actions/checkout@v2
+    steps:
       - name: Install conda envt w micromamba
         uses: mamba-org/provision-with-micromamba@main
         with:
