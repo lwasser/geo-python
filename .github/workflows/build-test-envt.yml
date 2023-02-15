@@ -5,12 +5,10 @@
 name: Test EA Python Envt Mac, Linux, Windows
 
 on:
+  pull_request:
   push:
     branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
+      - main
 
 jobs:
   runtests:
@@ -34,7 +32,6 @@ jobs:
           auto-update-conda: false
           auto-activate-base: false
           environment-file: environment.yml
-          activate-environment: earth-analytics-python
+          activate-environment: geo-python
       - run: conda list
-      - run: python -c "import earthpy"
-      - run: python -c "import rasterio"
+      - run: python -c "import rioxarray"

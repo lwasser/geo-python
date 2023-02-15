@@ -1,4 +1,4 @@
-name: sci-geo-python
+name: geo-python
 channels:
   - conda-forge
   - defaults
@@ -25,15 +25,9 @@ dependencies:
   - cartopy
   - descartes
   - contextily
-  - earthpy
+  - rioxarray
   - folium
   - geojson
-  - mapboxgl
-  - hydrofunctions
-  - geocoder
-  - tweepy
-  - xarray
-  - rioxarray>=0.3.0
   - scipy
   - netcdf4
   - nc-time-axis

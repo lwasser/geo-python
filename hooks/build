@@ -10,9 +10,9 @@ echo $current_branch
 if [ "$current_branch" == "master" ]
 then
   # Create a tag for that commit number to use for tracking but also update latest
-  docker build -t earthlab/earth-analytics-python-env:$SHA .
-  docker build -t earthlab/earth-analytics-python-env:latest .
+  docker build -t lwasser/geo-python:$SHA .
+  docker build -t lwasser/geo-python:latest .
 else
   # Create a tag for that particular branch
-  docker build -t earthlab/earth-analytics-python-env:$current_branch .
+  docker build -t lwasser/geo-python:$current_branch .
 fi

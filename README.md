@@ -1,6 +1,6 @@
 # Geo Python Conda Environment
 
-![Build / test environment](https://github.com/lwasser/earth-analytics-python-env/actions/workflows/build-test-envt.yml/badge.svg)
+![Build / test environment](https://github.com/lwasser/geo-python/actions/workflows/build-test-envt.yml/badge.svg)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lwasser/geo-python/main)
 
