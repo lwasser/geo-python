@@ -3,7 +3,7 @@
 ![Build / test environment](https://github.com/lwasser/geo-python/actions/workflows/build-test-envt.yml/badge.svg)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lwasser/geo-python/main)
-
+[![DOI](https://zenodo.org/badge/312111259.svg)](https://zenodo.org/badge/latestdoi/312111259)
 
 Welcome to the `geo-Python` Environment Repository! Here you will find a conda environment that can be installed on your computer using a `.yaml` file.
 
