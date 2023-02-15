@@ -29,5 +29,5 @@ jobs:
           environment-file: environment.yml
           environment-name: geo-python
           cache-downloads: true
-      - run: conda list
+      - run: mamba list
       - run: python -c "import rioxarray"

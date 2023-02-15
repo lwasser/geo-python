@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Leah
+    given-names: Wasser
+    orcid: https://orcid.org/0000-0002-8177-6550
+title: lwasser/geo-python: v1.2.1 Patch to update authors
+version: v1.2.1
+date-released: 2023-02-15
